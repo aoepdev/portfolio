@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import Header from './Header.tsx';
+import Header from './header/Header.tsx';
 import Footer from './Footer.tsx';
 
 type LayoutProps = {
@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Header />
-      <main className="container mx-auto">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );

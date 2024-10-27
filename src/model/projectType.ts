@@ -3,4 +3,5 @@ export interface ProjectType {
   description: string;
   imageUrl: string;
   projectUrl: string;
+  githubUrl: string;
 }

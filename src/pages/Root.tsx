@@ -10,8 +10,7 @@ const Root = () => {
   return (
     <Layout>
       <AnimatePresence mode="wait">
-        <motion.section
-          className='min-h-[calc(100vh-5.5rem)] pt-28'
+        <motion.div
           key={location.pathname}
           initial="initial"
           animate="animate"
@@ -20,7 +19,7 @@ const Root = () => {
           transition={pageTransition}
         >
           <Outlet />
-        </motion.section>
+        </motion.div>
       </AnimatePresence>
     </Layout>)
 }

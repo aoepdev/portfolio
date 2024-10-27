@@ -15,18 +15,20 @@ const ErrorPage = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-center px-4">
-        <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-lg">
-          <h1 className="text-6xl font-bold text-red-600 mb-4">{title}</h1>
-          <p className="text-lg text-gray-600 dark:text-gray-100 mb-6">{message}</p>
-          <Link
-            to="/"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300"
-          >
-            Go Back to Home
-          </Link>
+      <section id="projects" className="min-h-[calc(100vh-5.5rem)] pt-28 px-8">
+        <div className="flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-center">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md max-w-lg">
+            <h1 className="text-6xl font-bold text-red-600 mb-4">{title}</h1>
+            <p className="text-lg text-gray-600 dark:text-gray-100 mb-6">{message}</p>
+            <Link
+              to="/"
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300"
+            >
+              Go Back to Home
+            </Link>
+          </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

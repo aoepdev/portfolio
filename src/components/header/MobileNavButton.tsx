@@ -9,16 +9,16 @@ const MobileNavButton = ({ isOpen, onToggle }: { isOpen: boolean; onToggle: () =
       <div
         className="flex flex-col"
       >
-        <span className="block h-1 w-8 bg-black rounded-sm rotate-45 translate-y-0  "></span>
-        <span className="block h-1 w-8 bg-black rounded-sm -rotate-45 -translate-y-1"></span>
+        <span className="block h-1 w-8 bg-black rounded-sm rotate-45 translate-y-0 dark:bg-gray-200"></span>
+        <span className="block h-1 w-8 bg-black rounded-sm -rotate-45 -translate-y-1 dark:bg-gray-200"></span>
       </div>
     ) : (
       <div
         className="flex flex-col space-y-0.5"
       >
-        <span className="block w-8 h-1 bg-black rounded-sm"></span>
-        <span className="block w-8 h-1 bg-black rounded-sm"></span>
-        <span className="block w-8 h-1 bg-black rounded-sm"></span>
+        <span className="block w-8 h-1 bg-black rounded-sm dark:bg-gray-200"></span>
+        <span className="block w-8 h-1 bg-black rounded-sm dark:bg-gray-200"></span>
+        <span className="block w-8 h-1 bg-black rounded-sm dark:bg-gray-200"></span>
       </div>
     )}
   </button>)

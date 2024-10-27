@@ -11,6 +11,7 @@ const Root = () => {
     <Layout>
       <AnimatePresence mode="wait">
         <motion.section
+          className='min-h-[calc(100vh-5.5rem)] pt-28'
           key={location.pathname}
           initial="initial"
           animate="animate"

@@ -24,7 +24,7 @@ const DUMMY_PROJECTS: ProjectType[] = [
 ]
 
 const Projects = () => (
-  <div className="p-8 min-h-screen">
+  <div className="p-8 dark:text-white">
     <h2 className="text-3xl font-bold mb-4">My Projects</h2>
     <ul>
       {DUMMY_PROJECTS.map(proj => <ProjectCard key={proj.title} project={proj} />)}

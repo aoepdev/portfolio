@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="bg-gray-900 text-white py-4 mt-8">
+  <footer className="text-black dark:text-white py-4 mt-0">
     <div className="container mx-auto text-center">
       <p>&copy; {new Date().getFullYear()} AOEP Dev. All rights reserved.</p>
       <ul className="flex justify-center space-x-4 mt-2">

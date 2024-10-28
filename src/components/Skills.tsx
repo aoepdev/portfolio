@@ -3,7 +3,7 @@ import skills from "../data/skillsData.ts";
 const Skills = () => (
   <section id="skills" className="pt-16 px-4">
     <h2 className="text-3xl font-bold mb-8">Skills</h2>
-    <div className="grid gap-12 md:grid-cols-3 md:gap-6">
+    <div className="grid grid-cols-2 gap-12 md:grid-cols-3 md:gap-6">
       {Object.keys(skills).map((category) => (
         <div key={category} className="justify-items-center">
           <h3 className="text-xl font-semibold mb-4">{category}</h3>

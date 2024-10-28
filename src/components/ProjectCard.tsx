@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ProjectType } from "../model/projectType.ts";
+import { ProjectType } from "../model/types.ts";
 
 const ProjectCard = ({ project }: { project: ProjectType }) => {
   return (
@@ -7,13 +7,10 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
       className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
       whileHover={{ scale: 1.05, boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.3)" }}
     >
-      <motion.img
+      <img
         src={project.imageUrl}
         alt={project.title}
         className="w-full h-48 object-cover"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
       />
       <div className="p-4">
         <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">{project.title}</h3>

@@ -5,3 +5,8 @@ export interface ProjectType {
   projectUrl: string;
   githubUrl: string;
 }
+
+export interface ContactFormActionData {
+  success: boolean;
+  error?: string;
+}

@@ -1,6 +1,6 @@
 import ProjectCard from '../components/ProjectCard.tsx';
 import projectsData from '../data/projectData.ts';
-import { ProjectType } from "../model/projectType.ts";
+import { ProjectType } from "../model/types.ts";
 
 const Projects = () => (
   <section id="projects" className="min-h-[calc(100vh-5.5rem)] pt-28 px-8">

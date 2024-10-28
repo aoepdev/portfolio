@@ -1,5 +1,5 @@
 // src/data/projectsData.ts
-import { ProjectType } from "../model/projectType.ts";
+import { ProjectType } from "../model/types.ts";
 
 const projectsData: ProjectType[] = [
   {

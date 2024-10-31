@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# AOEP Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, modern portfolio website built to showcase my web development skills, projects, and experience. The site is responsive, optimized for performance, and incorporates animations, a theme toggle, and a contact form.
 
-Currently, two official plugins are available:
+## Technologies and Frameworks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**:
 
-## Expanding the ESLint configuration
+  - [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+  - [Redux Toolkit](https://redux-toolkit.js.org/) - State management for complex UI interactions, such as theme toggling
+  - [React Router](https://reactrouter.com/) - Routing for a seamless multi-page experience within a single-page application
+  - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework for styling
+  - [Framer Motion](https://www.framer.com/motion/) - Animation library to add smooth transitions and animations
+  - [TypeScript](https://www.typescriptlang.org/) - Adds static typing for increased reliability and maintainability
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Backend**:
 
-- Configure the top-level `parserOptions` property like this:
+  - [Firebase](https://firebase.google.com/) - Hosting and deployment for the project
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Project Management**:
+  - **Bitbucket** - Used for source control and project management during development
+  - **GitHub** - Final codebase repository for public viewing and showcasing
+  - **Jira** - Managed tasks, tracked progress, and handled project planning
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Features
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Responsive Design**: Adapts to different screen sizes for a mobile-friendly experience
+- **Dark/Light Theme Toggle**: Users can switch between themes, with preferences stored locally
+- **Animations**: Smooth page transitions and interactive animations powered by Framer Motion
+- **Contact Form**: Integrated with Formspree for email submissions, with feedback handling for successful or failed submissions
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Deployment
+
+This project is deployed on Firebase, accessible at aoep-dev.web.app.
+
+## License
+
+This project is licensed under the MIT License.
